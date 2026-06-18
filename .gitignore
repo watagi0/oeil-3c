@@ -4,3 +4,9 @@ venv/
 queue.json
 GUIanalyse.py
 GUIanalyse.py
+GUIanalyse.py
+pyvenv.cfg
+lib/
+lib64
+bin/
+data_analyse/
