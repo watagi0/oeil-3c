@@ -1,0 +1,21 @@
+{
+  "data": [
+    {
+      "id": "002",
+      "date": "2026-06-21",
+      "auteur": "Matahi",
+      "email": "rancez.matahi@gmail.com",
+      "titre": "Pigeon",
+      "image_local": "images/P1040074_01.jpg",
+      "image_cloudinary": "https://res.cloudinary.com/dpm5quzay/image/upload/v1782061364/cqdrtzq6d17f1tjbnrba.jpg",
+      "accord": "true",
+      "preuve": "",
+      "hash": "30cc971497acc9c45ee11fb3201a38930c47e2147fb916c1abe7d3d99080d498",
+      "status": "published",
+      "titre_analyse": "Pigeons",
+      "c1": "Erreur de point focal",
+      "c2": "Oscillation entre 2 sujets + bouton de chemise",
+      "c3": "Équilibrer le contraste, choisir un des deux sujets"
+    }
+  ]
+}
