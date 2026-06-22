@@ -101,9 +101,9 @@
   </section>
 
   <section class="cases-grid" id="cases-grid">
-    <div id="sentinel"></div>
     <!-- généré par JS -->
   </section>
+  <div id="sentinel"></div>
 
 </div>
 
@@ -230,11 +230,7 @@
       grid.innerHTML = '';
       loaded = 0;
     }
-    console.log({
-  loaded,
-  total: filtered.length
-});
-    const batch = filtered.slice(loaded, loaded + BATCH);
+const batch = filtered.slice(loaded, loaded + BATCH);
 
     const analyses = await Promise.all(
       batch.map(entry => loadAnalysis(entry.id))
@@ -283,12 +279,6 @@
   }
 
   // ── LOAD MORE ──
-
-  function loadMore() {
-  console.log("LOAD MORE");
-  renderCards(false);
-}
-
   function loadMore() {
     renderCards(false);
   }
@@ -361,10 +351,8 @@
 });
 
 observer.observe(document.getElementById('sentinel'));
-load-more-btn {
-  display:none !important;
-}
-  init();
+document.getElementById('load-more-btn').style.display = 'none';
+init();
 </script>
 
 </body>
