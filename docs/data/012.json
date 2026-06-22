@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "id": "012",
+      "date": "2026-06-22",
+      "auteur": " Evgeniy Maloletka ",
+      "email": "?",
+      "titre": " Russian Attack on Kyiv ",
+      "image_local": "images/WPP-2026Contest-Europe-SIN-EvgeniyMaloletka.jpg",
+      "image_cloudinary": "https://res.cloudinary.com/dpm5quzay/image/upload/v1782150125/sorocpvaqrb5lio4liub.jpg",
+      "accord": "false",
+      "preuve": "",
+      "hash": "79f0ae1e626a998634cb71e122ec48c897b6b879422b06437c3769f291341460",
+      "status": "published",
+      "titre_analyse": "Moitié morte",
+      "c1": "Mauvaise circulation du regard",
+      "c2": "La partie droite (Jaune) a trop peu de poids par rapport à la gauche\nSur-exposition + éléments parasites, le regard fuit vers les lignes rouges",
+      "c3": "Prise de vue 3/4, à hauteur de l'oeil du sujet",
+      "schemas": [
+        "https://res.cloudinary.com/dpm5quzay/image/upload/v1782150579/nu0pgxyrragwpdgd7zib.jpg"
+      ]
+    }
+  ]
+}
