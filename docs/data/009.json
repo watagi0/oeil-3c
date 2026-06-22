@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "009",
+      "date": "2026-06-22",
+      "auteur": "https://time.com/6337364/top-100-photos-2023/",
+      "email": "?",
+      "titre": "Ali Jadallah — Anadolu",
+      "image_local": "images/101.jpg",
+      "image_cloudinary": "https://res.cloudinary.com/dpm5quzay/image/upload/v1782132031/jkbqya1wref0zoz2ioie.jpg",
+      "accord": "false",
+      "preuve": "",
+      "hash": "5615a523716b1847ad66ef40796fbe55eb23a43f34ed85d4319a4ba4af46f6c7",
+      "status": "published",
+      "titre_analyse": "Femme + Enfant",
+      "c1": "Mauvais point focal",
+      "c2": "Tensions oculaires contraires qui poussent l’œil vers le milieu tensionnaire",
+      "c3": "Choisir, le point focal doit être l’un des deux sujets, pas les deux en même temps",
+      "schemas": []
+    }
+  ]
+}
