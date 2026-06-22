@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "013",
+      "date": "2026-06-22",
+      "auteur": " Brais Lorenzo ",
+      "email": "?",
+      "titre": " Burned Land ",
+      "image_local": "images/72.jpg",
+      "image_cloudinary": "https://res.cloudinary.com/dpm5quzay/image/upload/v1782150907/v3dsywzapys6dozz0ibk.jpg",
+      "accord": "false",
+      "preuve": "",
+      "hash": "2f45182a69a0c43a3e610e03dd669b2376969d5d5527bf904438f38a026bf25a",
+      "status": "published",
+      "titre_analyse": "Désaxage",
+      "c1": "Point focal sur zone morte",
+      "c2": "Désaxage à la prise de vue",
+      "c3": "Centrer le sujet en se décalant à droite\n(Centrerait aussi la ligne de fuite)",
+      "schemas": []
+    }
+  ]
+}
