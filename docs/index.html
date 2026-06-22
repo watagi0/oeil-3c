@@ -101,6 +101,7 @@
   </section>
 
   <section class="cases-grid" id="cases-grid">
+    <div id="sentinel"></div>
     <!-- généré par JS -->
   </section>
 
@@ -350,6 +351,19 @@
   });
 
   // ── START ──
+  const observer = new IntersectionObserver(entries => {
+  if (
+    entries[0].isIntersecting &&
+    loaded < filtered.length
+  ) {
+    renderCards(false);
+  }
+});
+
+observer.observe(document.getElementById('sentinel'));
+#load-more-btn {
+  display:none !important;
+}
   init();
 </script>
 
