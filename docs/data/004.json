@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": "004",
+      "date": "2026-06-22",
+      "auteur": "https://time.com/6337364/top-100-photos-2023/",
+      "email": "?",
+      "titre": "Go Nakamura—The New York Times/Redux",
+      "image_local": "images/72(1).jpg",
+      "image_cloudinary": "https://res.cloudinary.com/dpm5quzay/image/upload/v1782127179/rl0apwgqkuyvb20vvblg.jpg",
+      "accord": "false",
+      "preuve": "",
+      "hash": "eece3f186528d0da26dc17bd028e0c580a2d1d74592314e00df34dd7ec49dc04",
+      "status": "published",
+      "titre_analyse": "Enfant volant",
+      "c1": "Problème de point focal",
+      "c2": "Sujets sur-contrastés, volent l'attention au sujet\nErreur à la prise de vue",
+      "c3": "Se placer sur la droite (point jaune), face au sujet en l'air",
+      "schemas": [
+        "https://res.cloudinary.com/dpm5quzay/image/upload/v1782127228/xrget32gtdi0yjsnd63c.jpg",
+        "https://res.cloudinary.com/dpm5quzay/image/upload/v1782127234/neobcdj50huyqslghkeh.jpg"
+      ]
+    }
+  ]
+}
