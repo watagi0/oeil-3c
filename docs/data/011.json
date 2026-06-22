@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "011",
+      "date": "2026-06-22",
+      "auteur": "https://time.com/6337364/top-100-photos-2023/",
+      "email": "?",
+      "titre": "Cheney Orr—Reuters",
+      "image_local": "images/128.jpg",
+      "image_cloudinary": "https://res.cloudinary.com/dpm5quzay/image/upload/v1782132376/urzgl5dbqgtc3gsodwuz.jpg",
+      "accord": "false",
+      "preuve": "",
+      "hash": "dfa1b7c602d7c7914a062dbd437eac5c4efacab7af39faea9f8bc6fbc8914bfd",
+      "status": "published",
+      "titre_analyse": "Homme",
+      "c1": "Géométrie compositionnelle faible \nSujets parasites",
+      "c2": "Désaxage entre sujet principal et second plan\nSujets second plan droite faibles et parasites",
+      "c3": "Prendre la photo 1 pas plus tôt\nSe décaler d’1 pas vers la gauche + reculer d’1 pas",
+      "schemas": []
+    }
+  ]
+}
