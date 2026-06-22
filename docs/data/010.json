@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "010",
+      "date": "2026-06-22",
+      "auteur": "https://time.com/6337364/top-100-photos-2023/",
+      "email": "?",
+      "titre": "Sabiha Çimen — Magnum photos",
+      "image_local": "images/129.jpg",
+      "image_cloudinary": "https://res.cloudinary.com/dpm5quzay/image/upload/v1782132209/d2ociyotrraaaurt6vsh.jpg",
+      "accord": "false",
+      "preuve": "",
+      "hash": "504789c6f854ae203fcdf4e76ff5c9d7ff6ed3b77b11e3278848eee80bfc33a6",
+      "status": "published",
+      "titre_analyse": "Citrons",
+      "c1": "Erreur hiérarchique ",
+      "c2": "Premier plan volé par la surexposition centrale",
+      "c3": "Prise de vue 40 à 50cm plus bas, aligné avec la cagette",
+      "schemas": []
+    }
+  ]
+}
