@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "006",
+      "date": "2026-06-22",
+      "auteur": "https://time.com/6337364/top-100-photos-202",
+      "email": "?",
+      "titre": "Mohammed Salem  — Reuters",
+      "image_local": "images/117.jpg",
+      "image_cloudinary": "https://res.cloudinary.com/dpm5quzay/image/upload/v1782131657/wjqcnwxmjownyufec47r.jpg",
+      "accord": "false",
+      "preuve": "",
+      "hash": "1d62dfb732b05b0c2ec6a92387ee82220b4407a6249cc0e14749386bfc717d4a",
+      "status": "published",
+      "titre_analyse": "Femme",
+      "c1": "Dissonance géométrique",
+      "c2": "Femme de biais, carrelage désaxé",
+      "c3": "Choisir, aligner traits carrelage ou faire en sorte que la femme soit de face",
+      "schemas": []
+    }
+  ]
+}
