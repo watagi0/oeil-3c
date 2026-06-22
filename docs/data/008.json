@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "008",
+      "date": "2026-06-22",
+      "auteur": "Mous-K",
+      "email": "?",
+      "titre": "Cover",
+      "image_local": "images/119(1).jpg",
+      "image_cloudinary": "https://res.cloudinary.com/dpm5quzay/image/upload/v1782131874/fdhybsywqpk3xr0fpuxg.jpg",
+      "accord": "false",
+      "preuve": "",
+      "hash": "52aea2bc75dee7fd595e26540aa7c65d4b28f5899b9aa881f5cd3094d957f334",
+      "status": "published",
+      "titre_analyse": "Dissonance colorimétrique",
+      "c1": "Dissonance colorimétrique\nInformations superflues",
+      "c2": "Colorimétrie contradictoire à l’intention\nLunette de toilette superflue",
+      "c3": "Retravailler la colorimétrie pour donner un vrai effet sale\nBaisser l’exposition de la sacoche à droite\nPrendre la photo face au trou",
+      "schemas": []
+    }
+  ]
+}
