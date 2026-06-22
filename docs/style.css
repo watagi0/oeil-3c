@@ -408,8 +408,7 @@ body {
 .analysis-block { padding:16px 0; border-bottom:1px solid #1a1a1a; }
 .analysis-block:last-child { border-bottom:none; }
 .analysis-label { font-size:9px; color:#c89d62; letter-spacing:0.15em; margin-bottom:8px; }
-.analysis-text { font-size:11px; color:#aaa; line-height:1.65; }
-
+.analysis-text { font-size:11px; color:#aaa; line-height:1.65; white-space: pre-wrap; }
 /* RESPONSIVE */
 @media(max-width:1100px) {
   .hero-left, .hero-center, .stats-panel,
