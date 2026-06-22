@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "007",
+      "date": "2026-06-22",
+      "auteur": "https://time.com/6337364/top-100-photos-2023/",
+      "email": "?",
+      "titre": "Rahat dar — EPA EFE",
+      "image_local": "images/118.webp",
+      "image_cloudinary": "https://res.cloudinary.com/dpm5quzay/image/upload/v1782131757/mxchahlzmg2yaddth7mp.webp",
+      "accord": "false",
+      "preuve": "",
+      "hash": "ee0105bef1cfd12ef505cda8b7644a0fe40e91e85a6560ee333c9be788a9c652",
+      "status": "published",
+      "titre_analyse": "Guerre",
+      "c1": "Point focal pas clair",
+      "c2": "Sol surexposé, mauvais ratio poids focal / utilité",
+      "c3": "Baisser l’exposition du sol \nCentrer la rambarde sur la droite",
+      "schemas": []
+    }
+  ]
+}
