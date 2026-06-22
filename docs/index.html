@@ -144,6 +144,7 @@
   let allAnalyses = [];
   let filtered = [];
   let loaded = 0;
+  let cache = {};
   let currentLang = localStorage.getItem('lang') ||
     (navigator.language.startsWith('fr') ? 'fr' : 'en');
 
@@ -181,10 +182,13 @@
 
   // ── LOAD SINGLE ANALYSIS ──
   async function loadAnalysis(id) {
+    if (cache[id]) return cache[id];
+
     try {
       const res = await fetch(`data/${id}.json`);
       const data = await res.json();
-      return data.data[0];
+      cache[id] = data.data[0];
+      return cache[id];
     } catch(e) {
       console.error(`data/${id}.json introuvable`, e);
       return null;
@@ -201,10 +205,8 @@
     document.getElementById('stat-corrections').textContent = index.length;
     document.getElementById('stat-date').textContent = new Date().getFullYear();
 
-    const promises = index.map(entry => loadAnalysis(entry.id));
-    const results = await Promise.all(promises);
-    allAnalyses = results.filter(Boolean);
-    filtered = [...allAnalyses];
+    allAnalyses = index;
+    filtered = [...index];
 
     renderCards(true);
   }
@@ -220,15 +222,24 @@
   }
 
   // ── RENDER ──
-  function renderCards(reset = false) {
+  async function renderCards(reset = false) {
     const grid = document.getElementById('cases-grid');
+
     if (reset) {
       grid.innerHTML = '';
       loaded = 0;
     }
 
     const batch = filtered.slice(loaded, loaded + BATCH);
-    batch.forEach(a => grid.appendChild(makeCard(a)));
+
+    const analyses = await Promise.all(
+      batch.map(entry => loadAnalysis(entry.id))
+    );
+
+    analyses.filter(Boolean).forEach(a => {
+      grid.appendChild(makeCard(a));
+    });
+
     loaded += batch.length;
 
     document.getElementById('load-more-btn').style.display =
@@ -248,7 +259,7 @@
     const card = document.createElement('div');
     card.className = 'case-card';
     card.innerHTML = `
-      ${img ? `<img src="${img}" alt="">` : '<div class="case-placeholder"></div>'}
+      ${img ? `<img src="${img}" loading="lazy" decoding="async" alt="">` : '<div class="case-placeholder"></div>'}
       <div class="overlay"></div>
       <div class="case-content">
         <div class="case-id">CAS · #${a.id}</div>
