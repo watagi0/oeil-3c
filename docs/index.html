@@ -116,6 +116,7 @@
         <button class="carousel-btn carousel-prev" id="modal-prev" onclick="carouselNav(-1, event)">‹</button>
         <button class="carousel-btn carousel-next" id="modal-next" onclick="carouselNav(1, event)">›</button>
         <div class="carousel-counter" id="modal-counter"></div>
+        <div class="carousel-source" id="modal-source"></div>
       </div>
     </div>
     <div class="modal-right">
@@ -293,6 +294,8 @@
   function openModal(a, titre, c1, c2, c3, img) {
     document.getElementById('modal-id').textContent = `CAS · #${a.id}`;
     document.getElementById('modal-title').textContent = titre;
+    document.getElementById('modal-source').textContent = 
+    `${a.auteur}${a.titre ? ' — ' + a.titre : ''}`;
     document.getElementById('modal-c1').textContent = c1;
     document.getElementById('modal-c2').textContent = c2;
     document.getElementById('modal-c3').textContent = c3;

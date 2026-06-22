@@ -387,6 +387,14 @@ body {
   padding:3px 8px;
 }
 
+.carousel-source {
+    padding: 8px 14px;
+    font-size: 9px;
+    color: #444;
+    letter-spacing: 0.08em;
+    border-top: 1px solid #141414;
+}
+
 .modal-right {
   padding:32px;
   display:flex;
