@@ -1,0 +1,114 @@
+{
+  "PF": {
+    "fr": "Point focal",
+    "en": "Focal point",
+    "definition_fr": "Point physique sur lequel le cerveau se base pour convertir les données de l'œil afin de simuler la profondeur optique.",
+    "definition_en": "",
+    "version": 1
+  },
+  "FA": {
+    "fr": "Fuite attentionnelle",
+    "en": "Attention leakage",
+    "definition_fr": "Perte du regard hors du cadre ou vers un élément non intentionnel. Rupture du flux de lecture.",
+    "definition_en": "",
+    "version": 1
+  },
+  "LDF": {
+    "fr": "Ligne de fuite",
+    "en": "Ligne de fuite",
+    "definition_fr": "Vecteur optique qui dirige le regard dû aux tensions entre la LDF et le reste de la composition",
+    "definition_en": "Area toward which the eye naturally converges. Primary anchor of visual reading.",
+    "version": 1
+  },
+  "TO": {
+    "fr": "Tension occulaire",
+    "en": "Occular tension",
+    "definition_fr": "Relation entre deux ou plus vecteurs optiques.",
+    "definition_en": "",
+    "version": 1
+  },
+  "PDV": {
+    "fr": "Prise de vue",
+    "en": "Prise de vue",
+    "definition_fr": "Moment du déclenchemment photographique.",
+    "definition_en": ".",
+    "version": 1
+  },
+  "DAX": {
+    "fr": "Désaxage",
+    "en": "Ø",
+    "definition_fr": "Contradiction dans la géométrie compositionelle.",
+    "definition_en": "Ø",
+    "version": 1
+  },
+  "DiCo": {
+    "fr": "Dissonance colorimétrique",
+    "en": "Colorimetric dissonance",
+    "definition_fr": "Dissonance entre la colorimétrie attendue et la colorimétrie perçue.",
+    "definition_en": ".",
+    "version": 1
+  },
+  "sup": {
+    "fr": "Superflu",
+    "en": "Superflue",
+    "definition_fr": "Objet qui dessert la composition dans l'état actuel des choses.",
+    "definition_en": ".",
+    "version": 1
+  },
+  "supe": {
+    "fr": "Superflue",
+    "en": "Superflue",
+    "definition_fr": "Objet qui dessert la composition dans l'état actuel des choses",
+    "definition_en": ".",
+    "version": 1
+  },
+  "LOD": {
+    "fr": "Lignes optico-directrices",
+    "en": "Optico-directrice lines",
+    "definition_fr": "Lignes de la composition qui dirigent l'œil.",
+    "definition_en": ".",
+    "version": 1
+  },
+  "SUEX": {
+    "fr": "Sur-exposition",
+    "en": "Sur-exposition",
+    "definition_fr": "Mauvais ratio exposition/utilité oculaire.",
+    "definition_en": ".",
+    "version": 1
+  },
+  "UO": {
+    "fr": "Utilité oculaire",
+    "en": "Ocular utility",
+    "definition_fr": "Relation de 'récompense' entre l'objet et l'utilité perçue dans la composition.",
+    "definition_en": ".",
+    "version": 1
+  },
+  "comp": {
+    "fr": "Composition",
+    "en": "Composition",
+    "definition_fr": "Ensemble des objets de la photographie à l'instant T où l'on regarde l'image.",
+    "definition_en": ".",
+    "version": 1
+  },
+  "photo": {
+    "fr": "Photographie",
+    "en": "Photographie",
+    "definition_fr": "Retrancription mathématique de ce que l'œil humain perçoit en fonction des métriques du médium qui convertit le point de vue initial de la composition au déclenchemment",
+    "definition_en": ".",
+    "version": 1
+  },
+  "PANC": {
+    "fr": "Point d'ancrage",
+    "en": "Ancrage point",
+    "definition_fr": "Point parcouru par l'œil pour calibrer les métriques",
+    "definition_en": ".",
+    "version": 1
+  },
+  "VO": {
+    "fr": "Vecteurs optiques",
+    "en": "Optical vectors",
+    "definition_fr": "Éléments de la composition qui dirigent l'oeil vers une direction",
+    "definition_en": ".",
+    "version": 1
+  }
+}

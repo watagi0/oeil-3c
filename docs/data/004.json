@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "004",
+      "date": "2026-06-22",
+      "auteur": "https://www.magnumphotos.com/arts-culture/harry-gruyaerts-new-york/?_gl=1*1etwtu0*_up*MQ..*_ga*NDg4NzQwMzc1LjE3Nzg0ODU0MzI.*_ga_50D0ZG80LT*czE3Nzg0ODU0MzAkbzEkZzAkdDE3Nzg0ODU0MzAkajYwJGwwJGgxMzgxODM3OTA2*_ga_Y4MWFWT6P9*czE3Nzg0ODU0MzIkbzEkZzAkdDE3Nzg0ODU0MzIkajYwJGwwJGgw",
+      "email": "?",
+      "titre": "Manhattan. New York City. 2006. © Harry Gruyaert/Magnum Photos",
+      "image_local": "images/136.jpg",
+      "image_cloudinary": "https://res.cloudinary.com/dpm5quzay/image/upload/v1782131303/bac82zmif30ipl2qutt9.jpg",
+      "accord": "false",
+      "preuve": "",
+      "hash": "9ed367742b44ac0386d1de71bcb381dd344589b4d30b1067758763a98a9e16e7",
+      "status": "published",
+      "titre_analyse": "Dissonance géométrique",
+      "c1": "Mauvais point focal",
+      "c2": "Vecteurs lumineux portent l’œil vers la barre au centre\nZone morte en haut à gauche",
+      "c3": "Reculer d’1 pas + 1 à gauche",
+      "schemas": []
+    }
+  ]
+}
