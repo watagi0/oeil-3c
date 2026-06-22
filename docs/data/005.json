@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "005",
+      "date": "2026-06-22",
+      "auteur": "https://time.com/6337364/top-100-photos-2023/",
+      "email": "?",
+      "titre": "Yui Mok—WPA Pool/Getty Images",
+      "image_local": "images/time-top-100-photos-2023-047.webp",
+      "image_cloudinary": "https://res.cloudinary.com/dpm5quzay/image/upload/v1782131504/aglzgzekjfqjzoe0djvv.webp",
+      "accord": "false",
+      "preuve": "",
+      "hash": "d192aed977d39caa842f513b5d1e3f09f15f7ec8367b0df4b1cb38db425367e6",
+      "status": "published",
+      "titre_analyse": "Prince William",
+      "c1": "Dissonance géométrique dûe à l’axe des regards et du décor au premier plan",
+      "c2": "Bannière superflue, prend trop d’attention alors qu’elle n’est pas nette",
+      "c3": "Prise de vue plus basse, au niveau du sujet central",
+      "schemas": []
+    }
+  ]
+}
