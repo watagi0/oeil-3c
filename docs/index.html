@@ -111,7 +111,12 @@
   <div class="modal-box">
     <button class="modal-close" onclick="closeModal()">× FERMER</button>
     <div class="modal-left">
-      <img id="modal-img" src="" alt="">
+      <div class="carousel">
+        <img id="modal-img" src="" alt="">
+        <button class="carousel-btn carousel-prev" id="modal-prev" onclick="carouselNav(-1, event)">‹</button>
+        <button class="carousel-btn carousel-next" id="modal-next" onclick="carouselNav(1, event)">›</button>
+        <div class="carousel-counter" id="modal-counter"></div>
+      </div>
     </div>
     <div class="modal-right">
       <div class="modal-id" id="modal-id"></div>
@@ -138,8 +143,12 @@
   let allAnalyses = [];
   let filtered = [];
   let loaded = 0;
-  let currentLang = localStorage.getItem('lang') || 
+  let currentLang = localStorage.getItem('lang') ||
     (navigator.language.startsWith('fr') ? 'fr' : 'en');
+
+  // carousel state
+  let carouselImages = [];
+  let carouselIndex = 0;
 
   // ── LANG ──
   document.querySelectorAll('.lang').forEach(el => {
@@ -152,7 +161,6 @@
     });
   });
 
-  // Set initial active lang
   document.querySelectorAll('.lang').forEach(el => {
     if (el.dataset.lang === currentLang) el.classList.add('active');
     else el.classList.remove('active');
@@ -186,14 +194,12 @@
   async function init() {
     const index = await loadIndex();
 
-    // update stats
     document.getElementById('stat-total').textContent = index.length;
-    document.getElementById('stat-cats').textContent = 
+    document.getElementById('stat-cats').textContent =
       [...new Set(index.map(a => a.cat).filter(c => c && c !== 'unknown'))].length || '—';
     document.getElementById('stat-corrections').textContent = index.length;
     document.getElementById('stat-date').textContent = new Date().getFullYear();
 
-    // load all analyses
     const promises = index.map(entry => loadAnalysis(entry.id));
     const results = await Promise.all(promises);
     allAnalyses = results.filter(Boolean);
@@ -265,6 +271,24 @@
     renderCards(false);
   }
 
+  // ── CAROUSEL ──
+  function carouselNav(dir, e) {
+    e.stopPropagation();
+    carouselIndex = (carouselIndex + dir + carouselImages.length) % carouselImages.length;
+    updateCarousel();
+  }
+
+  function updateCarousel() {
+    const img = document.getElementById('modal-img');
+    const counter = document.getElementById('modal-counter');
+    img.src = carouselImages[carouselIndex];
+    counter.textContent = carouselImages.length > 1 ? `${carouselIndex + 1} / ${carouselImages.length}` : '';
+
+    const hasMultiple = carouselImages.length > 1;
+    document.getElementById('modal-prev').style.display = hasMultiple ? 'flex' : 'none';
+    document.getElementById('modal-next').style.display = hasMultiple ? 'flex' : 'none';
+  }
+
   // ── MODAL ──
   function openModal(a, titre, c1, c2, c3, img) {
     document.getElementById('modal-id').textContent = `CAS · #${a.id}`;
@@ -272,9 +296,19 @@
     document.getElementById('modal-c1').textContent = c1;
     document.getElementById('modal-c2').textContent = c2;
     document.getElementById('modal-c3').textContent = c3;
+
+    // build carousel images: main image + schemas
+    carouselImages = [img, ...(a.schemas || [])].filter(Boolean);
+    carouselIndex = 0;
+
     const modalImg = document.getElementById('modal-img');
-    if (img) { modalImg.src = img; modalImg.style.display = 'block'; }
-    else modalImg.style.display = 'none';
+    if (carouselImages.length > 0) {
+      modalImg.style.display = 'block';
+      updateCarousel();
+    } else {
+      modalImg.style.display = 'none';
+    }
+
     document.getElementById('modal').classList.add('open');
     document.body.style.overflow = 'hidden';
   }
@@ -286,7 +320,11 @@
     }
   }
 
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
+    if (e.key === 'ArrowLeft' && carouselImages.length > 1) { carouselIndex = (carouselIndex - 1 + carouselImages.length) % carouselImages.length; updateCarousel(); }
+    if (e.key === 'ArrowRight' && carouselImages.length > 1) { carouselIndex = (carouselIndex + 1) % carouselImages.length; updateCarousel(); }
+  });
 
   // ── START ──
   init();
