@@ -24,6 +24,11 @@ body {
 }
 
 /* HEADER */
+#view-main,
+#view-glossaire {
+    display: contents;
+}
+
 .topbar {
   grid-column:1 / 13;
   display:flex;
