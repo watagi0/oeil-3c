@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "014",
+      "date": "2026-06-24",
+      "auteur": " William Keo ",
+      "email": "?",
+      "titre": " Extramuros ",
+      "image_local": "images/2.jpg",
+      "image_cloudinary": "https://res.cloudinary.com/dpm5quzay/image/upload/v1782254846/m3riwu5xdi0rimgtxtfs.jpg",
+      "accord": "false",
+      "preuve": "",
+      "hash": "1edd0a4232966390ea42b803e8e0a9f5a5f1dc1ec45d65bc3750d9185f75002a",
+      "status": "published",
+      "titre_analyse": "Perspective",
+      "c1": "Problème d'axes",
+      "c2": "Prise de vue trop haute pour un sujet si bas",
+      "c3": "Se baisser légèrement pour être à la hauteur de l'enfant, cela révèlerait toute la profondeur et la perspective de grandeur",
+      "schemas": []
+    }
+  ]
+}
