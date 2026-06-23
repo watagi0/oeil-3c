@@ -19,91 +19,111 @@
       <div class="site-name">OEIL-3C</div>
       <div class="tagline">BANQUE ANALYTIQUE PHOTO-OCULAIRE</div>
     </div>
-    <div class="language">
-      <span class="lang active" data-lang="fr">FR</span>
-      <span class="lang-sep">/</span>
-      <span class="lang" data-lang="en">EN</span>
+    <div class="nav-right">
+      <button class="glossaire-btn" onclick="toggleView('glossaire')">GLOSSAIRE</button>
+      <div class="language">
+        <span class="lang active" data-lang="fr">FR</span>
+        <span class="lang-sep">/</span>
+        <span class="lang" data-lang="en">EN</span>
+      </div>
+      <button class="book-btn" onclick="window.open('https://calendly.com','_blank')">
+        RÉSERVER UNE CONSULTATION
+      </button>
     </div>
-    <button class="book-btn" onclick="window.open('https://calendly.com','_blank')">
-      RÉSERVER UNE CONSULTATION
-    </button>
   </header>
 
-  <!-- HERO -->
-  <section class="hero-left">
-    <div class="hero-label">MÉTHODE</div>
-    <h1>3C PROTOCOLE</h1>
-    <p class="hero-text">Méthode d'analyse structurelle des images.<br>Détecter. Diagnostiquer. Corriger.</p>
-    <p class="hero-subtext">Le protocole 3C identifie les ruptures perceptives, diagnostique leur impact structurel puis applique une correction minimale pour restaurer une lecture fonctionnelle.</p>
-  </section>
+  <!-- VUE PRINCIPALE -->
+  <div id="view-main">
 
-  <section class="hero-center">
-    <div class="step">
-      <span>01</span>
-      <div><h3>CONSTAT</h3><p>Observer la structure réelle de l'image sans interprétation.</p></div>
-    </div>
-    <div class="step">
-      <span>02</span>
-      <div><h3>CAUSE</h3><p>Identifier la rupture et mesurer son impact sur la lecture.</p></div>
-    </div>
-    <div class="step">
-      <span>03</span>
-      <div><h3>CORRECTION</h3><p>Appliquer la correction minimale. Vérifier la restauration du flux.</p></div>
-    </div>
-  </section>
+    <!-- HERO -->
+    <section class="hero-left">
+      <div class="hero-label">MÉTHODE</div>
+      <h1>3C PROTOCOLE</h1>
+      <p class="hero-text">Méthode d'analyse structurelle des images.<br>Détecter. Diagnostiquer. Corriger.</p>
+      <p class="hero-subtext">Le protocole 3C identifie les ruptures perceptives, diagnostique leur impact structurel puis applique une correction minimale pour restaurer une lecture fonctionnelle.</p>
+    </section>
 
-  <section class="stats-panel">
-    <h3>BASE DE DONNÉES</h3>
-    <div class="stat-row"><span>CAS ANALYSÉS</span><span id="stat-total">—</span></div>
-    <div class="stat-row"><span>CATÉGORIES</span><span id="stat-cats">—</span></div>
-    <div class="stat-row"><span>CORRECTIONS</span><span id="stat-corrections">—</span></div>
-    <div class="stat-row"><span>MISES À JOUR</span><span id="stat-date">—</span></div>
-  </section>
+    <section class="hero-center">
+      <div class="step">
+        <span>01</span>
+        <div><h3>CONSTAT</h3><p>Observer la structure réelle de l'image sans interprétation.</p></div>
+      </div>
+      <div class="step">
+        <span>02</span>
+        <div><h3>CAUSE</h3><p>Identifier la rupture et mesurer son impact sur la lecture.</p></div>
+      </div>
+      <div class="step">
+        <span>03</span>
+        <div><h3>CORRECTION</h3><p>Appliquer la correction minimale. Vérifier la restauration du flux.</p></div>
+      </div>
+    </section>
 
-  <!-- CATEGORIES -->
-  <section class="section-title">
-    <span>CATÉGORIES DE DIAGNOSTICS</span>
-    <span class="voir-btn" onclick="filterCat('all')">VOIR TOUTES →</span>
-  </section>
+    <section class="stats-panel">
+      <h3>BASE DE DONNÉES</h3>
+      <div class="stat-row"><span>CAS ANALYSÉS</span><span id="stat-total">—</span></div>
+      <div class="stat-row"><span>CATÉGORIES</span><span id="stat-cats">—</span></div>
+      <div class="stat-row"><span>CORRECTIONS</span><span id="stat-corrections">—</span></div>
+      <div class="stat-row"><span>MISES À JOUR</span><span id="stat-date">—</span></div>
+    </section>
 
-  <section class="categories-grid" id="categories-grid">
-    <div class="card" onclick="filterCat('point-focal')">
-      <div class="card-id">CAT·01</div>
-      <div class="card-title">Point focal faible</div>
-      <div class="card-more">[ + ]</div>
-    </div>
-    <div class="card" onclick="filterCat('fuite')">
-      <div class="card-id">CAT·02</div>
-      <div class="card-title">Fuite attentionnelle</div>
-      <div class="card-more">[ + ]</div>
-    </div>
-    <div class="card" onclick="filterCat('axe')">
-      <div class="card-id">CAT·03</div>
-      <div class="card-title">Axe cassé</div>
-      <div class="card-more">[ + ]</div>
-    </div>
-    <div class="card" onclick="filterCat('dissonance')">
-      <div class="card-id">CAT·04</div>
-      <div class="card-title">Dissonance colorimétrique</div>
-      <div class="card-more">[ + ]</div>
-    </div>
-    <div class="card" onclick="filterCat('contraste')">
-      <div class="card-id">CAT·05</div>
-      <div class="card-title">Contraste structurel faible</div>
-      <div class="card-more">[ + ]</div>
-    </div>
-  </section>
+    <!-- CATEGORIES -->
+    <section class="section-title">
+      <span>CATÉGORIES DE DIAGNOSTICS</span>
+      <span class="voir-btn" onclick="filterCat('all')">VOIR TOUTES →</span>
+    </section>
 
-  <!-- CASES -->
-  <section class="section-title second-title">
-    <span>CAS ANALYSÉS</span>
-    <span class="voir-btn" id="load-more-btn" onclick="loadMore()">CHARGER PLUS →</span>
-  </section>
+    <section class="categories-grid" id="categories-grid">
+      <div class="card" onclick="filterCat('point-focal')">
+        <div class="card-id">CAT·01</div>
+        <div class="card-title">Point focal faible</div>
+        <div class="card-more">[ + ]</div>
+      </div>
+      <div class="card" onclick="filterCat('fuite')">
+        <div class="card-id">CAT·02</div>
+        <div class="card-title">Fuite attentionnelle</div>
+        <div class="card-more">[ + ]</div>
+      </div>
+      <div class="card" onclick="filterCat('axe')">
+        <div class="card-id">CAT·03</div>
+        <div class="card-title">Axe cassé</div>
+        <div class="card-more">[ + ]</div>
+      </div>
+      <div class="card" onclick="filterCat('dissonance')">
+        <div class="card-id">CAT·04</div>
+        <div class="card-title">Dissonance colorimétrique</div>
+        <div class="card-more">[ + ]</div>
+      </div>
+      <div class="card" onclick="filterCat('contraste')">
+        <div class="card-id">CAT·05</div>
+        <div class="card-title">Contraste structurel faible</div>
+        <div class="card-more">[ + ]</div>
+      </div>
+    </section>
 
-  <section class="cases-grid" id="cases-grid">
-    <!-- généré par JS -->
-  </section>
-  <div id="sentinel"></div>
+    <!-- CASES -->
+    <section class="section-title second-title">
+      <span>CAS ANALYSÉS</span>
+    </section>
+
+    <section class="cases-grid" id="cases-grid"></section>
+    <div id="sentinel" style="height:1px;"></div>
+
+  </div><!-- /view-main -->
+
+  <!-- VUE GLOSSAIRE -->
+  <div id="view-glossaire" style="display:none;">
+
+    <section class="glossaire-header">
+      <div>
+        <div class="hero-label">RÉFÉRENTIEL</div>
+        <h1>GLOSSAIRE</h1>
+      </div>
+      <button class="back-btn" onclick="toggleView('main')">← RETOUR</button>
+    </section>
+
+    <section class="glossaire-grid" id="glossaire-grid"></section>
+
+  </div><!-- /view-glossaire -->
 
 </div>
 
@@ -145,11 +165,12 @@
   let allAnalyses = [];
   let filtered = [];
   let loaded = 0;
+  let loading = false;
   let cache = {};
+  let glossaireData = null;
   let currentLang = localStorage.getItem('lang') ||
     (navigator.language.startsWith('fr') ? 'fr' : 'en');
 
-  // carousel state
   let carouselImages = [];
   let carouselIndex = 0;
 
@@ -161,6 +182,7 @@
       document.querySelectorAll('.lang').forEach(l => l.classList.remove('active'));
       el.classList.add('active');
       renderCards(true);
+      if (glossaireData) renderGlossaire();
     });
   });
 
@@ -168,6 +190,15 @@
     if (el.dataset.lang === currentLang) el.classList.add('active');
     else el.classList.remove('active');
   });
+
+  // ── VIEW TOGGLE ──
+  function toggleView(view) {
+    document.getElementById('view-main').style.display = view === 'main' ? 'contents' : 'none';
+    document.getElementById('view-glossaire').style.display = view === 'glossaire' ? 'contents' : 'none';
+    document.querySelector('.glossaire-btn').textContent = view === 'glossaire' ? '← RETOUR' : 'GLOSSAIRE';
+    document.querySelector('.glossaire-btn').onclick = () => toggleView(view === 'glossaire' ? 'main' : 'glossaire');
+    if (view === 'glossaire' && glossaireData) renderGlossaire();
+  }
 
   // ── LOAD INDEX ──
   async function loadIndex() {
@@ -184,16 +215,43 @@
   // ── LOAD SINGLE ANALYSIS ──
   async function loadAnalysis(id) {
     if (cache[id]) return cache[id];
-
     try {
       const res = await fetch(`data/${id}.json`);
       const data = await res.json();
       cache[id] = data.data[0];
       return cache[id];
     } catch(e) {
-      console.error(`data/${id}.json introuvable`, e);
       return null;
     }
+  }
+
+  // ── LOAD GLOSSAIRE ──
+  async function loadGlossaire() {
+    try {
+      const res = await fetch('glossaire.json');
+      glossaireData = await res.json();
+    } catch(e) {
+      console.error('glossaire.json introuvable', e);
+    }
+  }
+
+  // ── RENDER GLOSSAIRE ──
+  function renderGlossaire() {
+    const grid = document.getElementById('glossaire-grid');
+    grid.innerHTML = '';
+    Object.entries(glossaireData).forEach(([sigle, entry]) => {
+      const nom = entry[currentLang] || entry['fr'];
+      const def = entry[`definition_${currentLang}`] || entry['definition_fr'];
+      if (!def || def === '.' || def === 'Ø') return;
+      const el = document.createElement('div');
+      el.className = 'glossaire-card';
+      el.innerHTML = `
+        <div class="glossaire-sigle">${sigle}</div>
+        <div class="glossaire-nom">${nom}</div>
+        <div class="glossaire-def">${def}</div>
+      `;
+      grid.appendChild(el);
+    });
   }
 
   // ── INIT ──
@@ -209,6 +267,7 @@
     allAnalyses = index;
     filtered = [...index];
 
+    await loadGlossaire();
     renderCards(true);
   }
 
@@ -222,37 +281,39 @@
     renderCards(true);
   }
 
-  // ── RENDER ──
+  // ── RENDER CARDS ──
   async function renderCards(reset = false) {
+    if (loading) return;
     const grid = document.getElementById('cases-grid');
 
     if (reset) {
       grid.innerHTML = '';
       loaded = 0;
     }
-const batch = filtered.slice(loaded, loaded + BATCH);
 
-    const analyses = await Promise.all(
-      batch.map(entry => loadAnalysis(entry.id))
-    );
+    if (loaded >= filtered.length) return;
 
-    analyses.filter(Boolean).forEach(a => {
-      grid.appendChild(makeCard(a));
-    });
-
+    loading = true;
+    const batch = filtered.slice(loaded, loaded + BATCH);
     loaded += batch.length;
 
-    document.getElementById('load-more-btn').style.display =
-      loaded < filtered.length ? 'inline' : 'none';
+    const analyses = await Promise.all(batch.map(entry => loadAnalysis(entry.id)));
+    analyses.filter(Boolean).forEach(a => grid.appendChild(makeCard(a)));
+
+    loading = false;
+
+    // re-observe in case sentinel is still visible
+    if (loaded < filtered.length) {
+      observer.observe(document.getElementById('sentinel'));
+    }
   }
 
   // ── MAKE CARD ──
   function makeCard(a) {
-    const lang = currentLang;
-    const titre = (a[lang] && a[lang].titre) || a.titre_analyse || a.titre || '—';
-    const c1 = (a[lang] && a[lang].c1) || a.c1 || '';
-    const c2 = (a[lang] && a[lang].c2) || a.c2 || '';
-    const c3 = (a[lang] && a[lang].c3) || a.c3 || '';
+    const titre = (a[currentLang] && a[currentLang].titre) || a.titre_analyse || a.titre || '—';
+    const c1 = (a[currentLang] && a[currentLang].c1) || a.c1 || '';
+    const c2 = (a[currentLang] && a[currentLang].c2) || a.c2 || '';
+    const c3 = (a[currentLang] && a[currentLang].c3) || a.c3 || '';
     const img = a.image_cloudinary || a.image_local || '';
     const cat = a.cat || '';
 
@@ -273,14 +334,8 @@ const batch = filtered.slice(loaded, loaded + BATCH);
         <div class="hover-row"><span class="hc">C3</span><span>${c3}</span></div>
       </div>
     `;
-
     card.addEventListener('click', () => openModal(a, titre, c1, c2, c3, img));
     return card;
-  }
-
-  // ── LOAD MORE ──
-  function loadMore() {
-    renderCards(false);
   }
 
   // ── CAROUSEL ──
@@ -291,27 +346,23 @@ const batch = filtered.slice(loaded, loaded + BATCH);
   }
 
   function updateCarousel() {
-    const img = document.getElementById('modal-img');
-    const counter = document.getElementById('modal-counter');
-    img.src = carouselImages[carouselIndex];
-    counter.textContent = carouselImages.length > 1 ? `${carouselIndex + 1} / ${carouselImages.length}` : '';
-
-    const hasMultiple = carouselImages.length > 1;
-    document.getElementById('modal-prev').style.display = hasMultiple ? 'flex' : 'none';
-    document.getElementById('modal-next').style.display = hasMultiple ? 'flex' : 'none';
+    document.getElementById('modal-img').src = carouselImages[carouselIndex];
+    document.getElementById('modal-counter').textContent =
+      carouselImages.length > 1 ? `${carouselIndex + 1} / ${carouselImages.length}` : '';
+    const multi = carouselImages.length > 1;
+    document.getElementById('modal-prev').style.display = multi ? 'flex' : 'none';
+    document.getElementById('modal-next').style.display = multi ? 'flex' : 'none';
   }
 
   // ── MODAL ──
   function openModal(a, titre, c1, c2, c3, img) {
     document.getElementById('modal-id').textContent = `CAS · #${a.id}`;
     document.getElementById('modal-title').textContent = titre;
-    document.getElementById('modal-source').textContent = 
-    `${a.auteur}${a.titre ? ' — ' + a.titre : ''}`;
+    document.getElementById('modal-source').textContent = `${a.auteur}${a.titre ? ' — ' + a.titre : ''}`;
     document.getElementById('modal-c1').textContent = c1;
     document.getElementById('modal-c2').textContent = c2;
     document.getElementById('modal-c3').textContent = c3;
 
-    // build carousel images: main image + schemas
     carouselImages = [img, ...(a.schemas || [])].filter(Boolean);
     carouselIndex = 0;
 
@@ -340,20 +391,18 @@ const batch = filtered.slice(loaded, loaded + BATCH);
     if (e.key === 'ArrowRight' && carouselImages.length > 1) { carouselIndex = (carouselIndex + 1) % carouselImages.length; updateCarousel(); }
   });
 
-  // ── START ──
+  // ── INFINITE SCROLL ──
   const observer = new IntersectionObserver(entries => {
-  if (
-    entries[0].isIntersecting &&
-    loaded < filtered.length
-  ) {
-    renderCards(false);
-  }
-});
+    if (entries[0].isIntersecting && !loading && loaded < filtered.length) {
+      renderCards(false);
+    }
+  }, { rootMargin: '200px' });
 
-observer.observe(document.getElementById('sentinel'));
-document.getElementById('load-more-btn').style.display = 'none';
-init();
+  observer.observe(document.getElementById('sentinel'));
+
+  // ── START ──
+  init();
 </script>
 
 </body>
-</html>.
+</html>

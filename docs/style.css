@@ -387,14 +387,6 @@ body {
   padding:3px 8px;
 }
 
-.carousel-source {
-    padding: 8px 14px;
-    font-size: 9px;
-    color: #444;
-    letter-spacing: 0.08em;
-    border-top: 1px solid #141414;
-}
-
 .modal-right {
   padding:32px;
   display:flex;
@@ -416,7 +408,8 @@ body {
 .analysis-block { padding:16px 0; border-bottom:1px solid #1a1a1a; }
 .analysis-block:last-child { border-bottom:none; }
 .analysis-label { font-size:9px; color:#c89d62; letter-spacing:0.15em; margin-bottom:8px; }
-.analysis-text { font-size:11px; color:#aaa; line-height:1.65; white-space: pre-wrap; }
+.analysis-text { font-size:11px; color:#aaa; line-height:1.65; }
+
 /* RESPONSIVE */
 @media(max-width:1100px) {
   .hero-left, .hero-center, .stats-panel,
@@ -428,4 +421,107 @@ body {
   .modal-box { grid-template-columns:1fr; }
   .modal-left { border-right:none; border-bottom:1px solid #1a1a1a; }
   .carousel { min-height:280px; }
+}
+
+/* NAV RIGHT */
+.nav-right {
+  grid-column: 8 / 13;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.glossaire-btn {
+  background: none;
+  border: none;
+  color: #555;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  transition: .2s;
+  padding: 0;
+}
+
+.glossaire-btn:hover { color: #c89d62; }
+
+/* GLOSSAIRE VIEW */
+.glossaire-header {
+  grid-column: 1 / 13;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.glossaire-header h1 {
+  font-size: 48px;
+  line-height: 1;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin-top: 16px;
+}
+
+.back-btn {
+  background: none;
+  border: 1px solid #1a1a1a;
+  color: #555;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  padding: 10px 16px;
+  transition: .2s;
+}
+
+.back-btn:hover { color: white; border-color: #333; }
+
+.glossaire-grid {
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  margin-top: 28px;
+}
+
+.glossaire-card {
+  background: #050505;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: .2s;
+}
+
+.glossaire-card:hover { background: #0a0a0a; }
+
+.glossaire-sigle {
+  color: #c89d62;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+}
+
+.glossaire-nom {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.glossaire-def {
+  color: #666;
+  font-size: 11px;
+  line-height: 1.65;
+  margin-top: 4px;
+}
+
+@media(max-width: 1100px) {
+  .glossaire-grid { grid-template-columns: 1fr; }
+  .glossaire-header h1 { font-size: 32px; }
+  .nav-right { gap: 12px; }
 }
