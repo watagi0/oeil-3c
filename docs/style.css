@@ -18,9 +18,9 @@ body {
 /* HEADER */
 .topbar {
   grid-column:1 / 13;
-  display:grid;
-  grid-template-columns:repeat(12,1fr);
+  display:flex;
   align-items:center;
+  justify-content:space-between;
   padding-bottom:18px;
   border-bottom:1px solid #1c1c1c;
 }
