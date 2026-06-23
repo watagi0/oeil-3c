@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "id": "015",
+      "date": "2026-06-24",
+      "auteur": "Nicolò Filippo Rosso",
+      "email": "?",
+      "titre": "Exodus",
+      "image_local": "images/3.jpg",
+      "image_cloudinary": "https://res.cloudinary.com/dpm5quzay/image/upload/v1782256461/mj2cusibirzjuofpvybd.jpg",
+      "accord": "false",
+      "preuve": "",
+      "hash": "69149bbac401e6423d0094039f61c00ae51b3f7b7648372faef1a8990f5385df",
+      "status": "published",
+      "titre_analyse": "Voiture",
+      "c1": "Tension occulaire mal maitrisée",
+      "c2": "Sujet à droite sûr-contrasté / Sujet central pas centré ",
+      "c3": "Centrer le sujet de droite en se déplaçant sur la gauche. Ou inverse si sujet voulu est la femme au milieu gauche",
+      "schemas": [
+        "https://res.cloudinary.com/dpm5quzay/image/upload/v1782256709/cvgalsbfjtnyqhpn3s6g.jpg"
+      ]
+    }
+  ]
+}
